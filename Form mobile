@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+       
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
+
+       
+        .info {
+            width: 20%;
+            margin-right: 30px;
+            text-align: left;
+            background-color: #b0e8f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info h1 {
+            color: #2c3e50;
+            font-size: 24px;
+        }
+
+        .info p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #34495e;
+        }
+
+        
+        .container {
+            width: 30%;
+            background-color: #f6c1ec;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        
+        input[type="submit"] {
+            padding: 12px;
+            background: linear-gradient(135deg, #6c63ff, #3b3fcb);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #5a54d6, #32358c);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px);
+        }
+
+       
+        @media only screen and (max-width: 480px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info, .container {
+                width: 80%;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        
+        <div class="info">
+            <h1>Ligouri Titus</h1>
+            <p>Web Developer</p>
+        </div>
+
+        
+        <div class="container">
+            <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
