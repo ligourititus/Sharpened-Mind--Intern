@@ -1,1 +1,16 @@
-AAa . 
+I have started my first intern and i have a report on Dark mode and Light mode usin Javascript.
+In the begining i hava create resume using (html) and added style using css.
+Then i have worked on javascript.
+On that first i have created a toggle button.
+Then i have added dark mode using background color to black.
+After that for Light mode just default color (white).
+This is how my Tasks are going on.
+Next is to push my code on Git hub.
+By using these commands {
+    -git init(initilize my git )
+    -git remote add orgin LINK(add repository link)
+    -git add .
+    -git commit -m ""(title)
+    -git push -u orgin master/main(chose the branch)
+}
+
