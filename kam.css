@@ -1,0 +1,53 @@
+/* Global Styles */
+body {
+    background-color: rgb(253, 249, 202);
+    background-image: url("Nimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    background-image: none;
+    color: white;
+}
+
+/* Marquee */
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+/* Centered Content */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 290px;
+    border-radius: 25%;
+    transform: translate(450px, 10px); 
+    margin-bottom: -100px;
+}
+
+/* Button Styles */
+input[type="button"] {
+    padding: 12px;
+    background: linear-gradient(135deg, #eaa0de, #3b3fcb);   
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s
