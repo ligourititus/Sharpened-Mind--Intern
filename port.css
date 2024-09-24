@@ -3,9 +3,33 @@
     position: ;
     width: 290px;
     border-radius: 25%;
-    transform: translate(450px,-10px); 
+    transform: translate(450px,10px); 
+    margin-bottom: -100px;
     
   }
+  body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    padding: 10px 20px;
+    background-color: #b92933;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+.toggle-btn:hover {
+    background-color: #e74c4c;
+}
        
   input[type="BUTTON"] {
     padding: 12px;
@@ -26,7 +50,7 @@ input[type="BUTTON"]:hover {
     transform: translateY(-3px);
 }
 .butt{
-    transform: translate(450px,20px); 
+    transform: translate(450px,120px); 
     
 
 }
@@ -53,11 +77,16 @@ input[type="BUTTON"]:hover {
 body{
     text-align:calc(left);
     background-color: rgb(253, 249, 202);
-    background-image: url("bg img.jpg");
+    background-image: url("Nimg.jpg");
     background-repeat: no-repeat;
     background-size: 2000px;
     
       }
+      body.dark-mode {
+        background-color: #121212;
+        background-image: none;
+        color: white;
+    }
    
 
  h1{
@@ -91,16 +120,17 @@ p{
 }
 
 .navbar {
-    background-color: #54f4be;
+    background-color: #54f499;
     padding: 20px;
     padding-right:500px;
-    border-radius: 50px;
+    border-radius: 50px
   
 }
 .nav-links {
     list-style-type: none;
     display: flex;
     justify: content 50px;
+    
 }
 
 
@@ -117,4 +147,36 @@ p{
     background-color: #575757;
     border-radius: 5px;
 }
+#reg{
+    color: #05421f;
+    font-size:xx-large;
+}
 
+@media (min-width:300px) and (max-width: 600px) {
+    .centered {
+        position: absolute;
+        top: 33%;
+        left: 110%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      p{
+        font-family:Trebuchet MS;
+        font-size:smaller;
+        text-align:center;
+        font-weight: bold;
+        transform: translate(120px,-90px);    
+    }
+    .centered img{
+        position: absolute;
+        margin-left: -1000px;
+        margin-top: 30px;
+    }
+    .butt{
+        position: absolute;
+        margin-left: -900px;
+        margin-top: 300px;
+        
+    }
+    
+}
