@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <button class="toggle-btn" id="mode-toggle">Dark mode</button>
+   
     <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="resume">Resume</a></li>
+                <li><a href="RESUME.html">Resume</a></li>
             </ul>
         </nav>
         <br><br>
@@ -22,7 +24,8 @@
         <div class="split left">
             <div class="centered">
                 <div data-aos="fade-right">
-             <h2>ABOUT</h2>
+             <br><br>
+             <h2 id="reg">REGARDING</h2>
                 <p>My name is Ligouri.</p>   
                     <p>Im a student from MKU. </p>
                 <p>Doing my internshinp in (Sharpened Mind solution and technology).</p>
@@ -36,11 +39,29 @@
                     <div data-aos="flip-down">
                   <img src="resume img.jpg" alt="ligo">
                   <div class="butt">
-                  <input type="button" value="HIRE ME"></div>
+                  <input type="button" value="CONTACT"></div>
                 </div>
-                
-                 
+                <br><br><br>
+ 
                 </div>
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init();
+            
+                    const toggleBtn = document.getElementById('mode-toggle');
+                    const body = document.body;
+            
+                    function toggleMode() {
+                        body.classList.toggle('dark-mode');
+                        if (body.classList.contains('dark-mode')) {
+                            toggleBtn.textContent = 'Light Mode';
+                        } else {
+                            toggleBtn.textContent = 'Dark Mode';
+                        }
+                    }
+            
+                    toggleBtn.addEventListener('click', toggleMode);
+                </script>
        
         
              
