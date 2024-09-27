@@ -10,9 +10,16 @@
             font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background-color: #dca5a5;
+            background-color: #dad5d5;
+        }
+        h2{
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bolder;
+            color: #092d52;
         }
 
+       
         .main-container {
             display: flex;
             justify-content: center;
@@ -20,6 +27,7 @@
             margin-top: 50px;
         }
 
+       
         .info {
             width: 20%;
             margin-right: 30px;
@@ -41,12 +49,16 @@
             color: #34495e;
         }
 
+        
         .container {
-            width: 30%;
-            background-color: #f6c1ec;
+            width: 32%;
+    
+            background-color: #f6f5f5;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 18px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right:15px;
+           
         }
 
         form {
@@ -70,6 +82,7 @@
             font-size: 16px;
         }
 
+        
         input[type="submit"] {
             padding: 12px;
             background: linear-gradient(135deg, #6c63ff, #3b3fcb);
@@ -90,14 +103,14 @@
             transform: translateY(-3px);
         }
 
+       
         @media only screen and (max-width: 768px) {
             .main-container {
                 flex-direction: column;
                 align-items: center;
             }
 
-            .info,
-            .container {
+            .info, .container {
                 width: 80%;
                 margin-right: 0;
             }
@@ -106,14 +119,17 @@
 </head>
 
 <body>
+    <h2>CONTACT</h2>
     <div class="main-container">
+        
         <div class="info">
             <h1>Ligouri Titus</h1>
             <p>Web Developer</p>
         </div>
 
+        
         <div class="container">
-            <form id="contactForm">
+            <form action="#" method="post">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
 
@@ -127,45 +143,6 @@
             </form>
         </div>
     </div>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function (event) {
-           
-            event.preventDefault();
-
-          
-            const username = document.getElementById('username').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const comments = document.getElementById('comments').value.trim();
-
-           
-            if (username === '') {
-                alert('Please enter your username.');
-                return;
-            }
-
-            if (email === '') {
-                alert('Please enter your email.');
-                return;
-            }
-
-           
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailPattern.test(email)) {
-                alert('Please enter a valid email address.');
-                return;
-            }
-
-            if (comments === '') {
-                alert('Please enter your comments.');
-                return;
-            }
-
-            alert('Form submitted successfully!');
-
-           
-        });
-    </script>
 </body>
 
 </html>
