@@ -1,182 +1,90 @@
-
-.centered img {
-    position: ;
-    width: 290px;
-    border-radius: 25%;
-    transform: translate(450px,10px); 
-    margin-bottom: -100px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="port.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
     
-  }
-  body.dark-mode {
-    background-color: #333;
-    color: #f4f4f4;
-}
-
-
-
-.toggle-btn {
-    position: absolute;
-    top: 20px;
-    right: 100px;
-    padding: 10px 20px;
-    background-color: #b92933;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    <button class="toggle-btn" id="mode-toggle">Dark mode</button>
    
-}
-
-.toggle-btn:hover {
-    background-color: #e74c4c;
-}
-       
-  input[type="BUTTON"] {
-    padding: 12px;
-    background: linear-gradient(135deg, #eaa0de, #3b3fcb);   
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-input[type="BUTTON"]:hover {
-    background: linear-gradient(135deg, #e3abe3, #32358c);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px);
-}
-.butt{
-    transform: translate(450px,120px); 
-    
-
-}
-  .right {
-    right: 60;}
-    .left {
-        left: 60;}
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-
-
-       
-         
-
-
-
-
-      }
-
-body{
-    text-align:calc(left);
-    background-color: rgb(253, 249, 202);
-    background-image: url("Nimg.jpg");
-    background-repeat: no-repeat;
-    background-size: 2000px;
-    
-      }
-      body.dark-mode {
-        background-color: #121212;
-        background-image: none;
-        color: white;
-    }
-   
-
- h1{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 40px;
-  
-  
-    
-}
-h2{
-    transform: translate(-400px,-120px);
-    font-family: ;
-}
-p{
-    font-family:Trebuchet MS;
-    font-size:x-large;
-    text-align:center;
-    float:none;
-    text-indent:-1000px;
-    font-weight: bold;
-    transform: translate(120px,-90px);
-
-
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-}
-
-.navbar {
-    background-color: #54f499;
-    padding: 20px;
-    padding-right:500px;
-    border-radius: 50px
-  
-}
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    justify: content 50px;
-    
-}
-
-
-
-
-.nav-links a {
-    text-decoration:dotted;
-    color: white;
-    padding: 10px ;
-    font-size: 20px;
-}
-
-.nav-links a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
-#reg{
-    color: #05421f;
-    font-size:xx-large;
-}
-
-@media (min-width:300px) and (max-width: 600px) {
-    .centered {
-        position: absolute;
-        top: 33%;
-        left: 110%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-      p{
-        font-family:Trebuchet MS;
-        font-size:smaller;
-        text-align:center;
-        font-weight: bold;
-        transform: translate(120px,-90px);    
-    }
-    .centered img{
-        position: absolute;
-        margin-left: -1000px;
-        margin-top: 30px;
-    }
-    .butt{
-        position: absolute;
-        margin-left: -900px;
-        margin-top: 300px;
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="Form.html">Contact</a></li>
+            <li><a href="RESUME.html">Resume</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <marquee> <h1>HELLO THERE ! I'm LIGO</h1></marquee>
+    <br><br><br>
+    <div class="split left">
+        <div class="centered">
+            <div data-aos="fade-right">
+                <br><br>
+                <h2 id="reg">REGARDING</h2>
+                <p>My name is Ligouri.</p>   
+                <p>I'm a student from MKU.</p>
+                <p>Doing my internship at (Sharpened Mind solution and technology).</p>
+                <p>Now I'm doing small tasks on WEB DEVELOPMENT.</p>
+                <P>I'm improving my skills through this intern program.</P>
+            </div>
+        </div>
+    </div>
+    <div class="split right">
+        <div class="centered">
+            <div data-aos="flip-down">
+                <img src="resume img.jpg" alt="ligo" id="profile-img">
+                <div class="butt">
+                   <a href="Form.html"><input type="button" value="CONTACT"></a>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
         
-    }
-    
-}
+        const toggleBtn = document.getElementById('mode-toggle');
+        const body = document.body;
+
+        function toggleMode() {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                toggleBtn.textContent = 'Light Mode';
+            } else {
+                toggleBtn.textContent = 'Dark Mode';
+            }
+        }
+
+        toggleBtn.addEventListener('click', toggleMode);
+
+        
+        const img = document.getElementById('profile-img');
+        img.addEventListener('click', function () {
+            this.classList.toggle('blurred');
+        });
+    </script>
+      <style>
+        
+        .blurred {
+            filter: blur(5px);
+            transition: filter 0.3s ease;
+        }
+        
+       
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+   
+    </style>
+</body>
+</html>
+
