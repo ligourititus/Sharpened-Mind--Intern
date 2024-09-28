@@ -32,8 +32,8 @@
     background: rgb(255 255 255 / 25%);
     border-radius: 1000% 1000% 0 0;
     position: fixed;
-    width: 200%;
-    height: 12em;
+    width:25%;
+    height: 26em;
     animation: wave 10s -3s linear infinite;
     transform: translate3d(0, 0, 0);
     opacity: 0.8;
@@ -86,7 +86,8 @@ body {
             text-align: center;
             font-size: xx-large;
             font-weight: bolder;
-            color: #06325e;
+            color: #000002d2;
+            font-family: 'Times New Roman', Times, serif;
         }
 
        
@@ -98,7 +99,7 @@ body {
         }
         .info {
             width: 20%;
-            margin-right: 30px;
+            margin-right: 50px;
             text-align:center;
             background-color: #b0e8f5;
             padding: 20px;
@@ -106,7 +107,7 @@ body {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .info h1 {
-            color: #2c3e50;
+            color: #000000;
             font-size: 24px;
            
         }
@@ -175,6 +176,38 @@ body {
                 margin-right: 0;
             }
         }
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+   
+
+  
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    
+    
+}
+
+
+
+
+.nav-links a {
+    text-decoration:dotted;
+    color: white;
+    padding: 10px ;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
     </style>
 </head>
 
@@ -184,7 +217,15 @@ body {
            <div class="wave"></div>
            <div class="wave"></div>
            <div class="wave"></div>
-        </div>
+           <nav class="navbar"></nav>
+           <ul class="nav-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="ABOUT.html">About</a></li>
+               <li><a href="RESUME.html">Resume</a></li>
+              
+           </ul>
+       </nav>
+       
       
     <h2>CONTACT</h2>
     <div class="main-container">
@@ -210,6 +251,7 @@ body {
             </form>
         </div>
     </div>
+</div>
 </body>
 
 </html>
