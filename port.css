@@ -19,8 +19,8 @@
     top: 20px;
     right: 100px;
     padding: 10px 20px;
-    background-color: #b92933;
-    color: white;
+    background-color: #38ffcd;
+    color: rgb(17, 16, 16);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -28,7 +28,7 @@
 }
 
 .toggle-btn:hover {
-    background-color: #e74c4c;
+    background-color:#f04343;
 }
        
   input[type="BUTTON"] {
@@ -121,16 +121,21 @@ p{
 }
 
 .navbar {
-    background-color: #54f499;
+    background-color: #f04343;
     padding: 20px;
-    padding-right:500px;
-    border-radius: 50px
+    padding-right:250px;
+    border-radius: 50px;
+    width: 700px;
+    
+   
+
   
 }
 .nav-links {
     list-style-type: none;
     display: flex;
-    justify: content 50px;
+    justify-content: right;
+    
     
 }
 
