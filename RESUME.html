@@ -8,17 +8,71 @@
    
     <title>RESUME</title>
     <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8faf5;
+            color: #100101;
+            font-size: large;
+        }
+
+        .navbar {
+            background-color: #f04343;
+            padding: 30px;
+            border-radius: 50px;
+            max-width: 1500px;
+            margin: 20px right;
+            display: flex;
+            justify-content:space-between;
+            min-height: 60px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            justify-items: right;
+            transform: translate(920px,-40px);
+            
+        }
+
+        .nav-links a {
+            text-decoration: dotted;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            font-size: 20px;
+            
+        }
+
+        .nav-links a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+#reg{
+    color: #05421f;
+    font-size:xx-large;
+}
+
       
         body {
             font-family:'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
-            background-color: #dbebbe;
+            background-color: #f8faf5;
             color: #100101;
             font-size: large;
         }
+        
         h2{
             padding: 20px;
+            
         }
         .proj,p{
             padding:2px ;
@@ -27,37 +81,7 @@
             color: rgb(16, 2, 2);
 
         }
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box;
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    justify-content: left;
-    
-    
-}
-
-
-
-
-.nav-links a {
-    text-decoration:dotted;
-    color: rgb(255, 0, 0);
-    padding: 10px ;
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-.nav-links a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
-#reg{
-    color: #05421f;
-    font-size:xx-large;
-}
+      
 
         
 
@@ -66,6 +90,7 @@
             line-height: 1.5;
             margin: 5px 0;
             color: rgb(0, 0, 0);
+            text-align: left;
         }
 
         hr {
@@ -150,7 +175,7 @@
       
         .toggle-btn {
             position: absolute;
-            top: 40px;
+            top: 100px;
             right: 20px;
             padding: 10px 20px;
             background-color: #ff0f1f;
@@ -164,79 +189,21 @@
         .toggle-btn:hover {
             background-color: #e74c4c;
         }
-            @media (min-width:500px) and (max-width: 600px) {
-  body {
-    background-color: rgb(234, 238, 239);
-  }
-  table[border="1"] th,
-            table[border="1"] td {
-                font-size: 14px;
-                
-                padding: 10px;
-            }
-            
-            table[border="1"] th{
-                font-size: 10px;
-                padding: 2px;
-            }
-}
-@media (min-width:350px) and (max-width: 480px) {
-  body,{
-    background-color: rgb(246, 247, 248);
-  }
-  table[border="1"] th,
-            table[border="1"] td {
-                font-size: 10px;
-                padding: 5px;
-            }
-            
-        td {
-            font-size:10px;
-            padding: 20px;
-            vertical-align: top;
-        }
-
-        table[border="1"] th,
-        table[border="1"] td {
-            border: 1px solid #ddd;
-            padding: 2px;
-            text-align: left;
-           
-        }
-            
-           
     
     </style>
 </head>
 
 <body>
-    <button class="toggle-btn" id="mode-toggle">Dark mode</button>
 
-    <script>
-      
-        const toggleBtn = document.getElementById('mode-toggle');
-        const body = document.body;
 
-      
-        function toggleMode() {
-            body.classList.toggle('dark-mode');
-            if (body.classList.contains('dark-mode')) {
-                toggleBtn.textContent = ' Light Mode';  
-            } else {
-                toggleBtn.textContent = ' Dark Mode';
-            }
-        }
-        toggleBtn.addEventListener('click', toggleMode);
-    </script>
-     <nav class="navbar"></nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ABOUT.html">About</a></li>
-            <li><a href="Form.html">Contact</a></li>
-           
-        </ul>
-    </nav>
-    <hr>
+    </html><nav class="navbar"></nav>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Form.html">Contact</a></li>
+        <li><a href="RESUME.html">Resume</a></li>
+        <li><a href="ABOUT.html">About</a></li>
+    </ul>
+</nav>
     <table width="100%" height="100%">
         <tr>
             <td width="50%">
@@ -316,7 +283,7 @@
     </table>
     <hr>
     <div class="proj">
-    <h3 style="color: tomato;">PROJECTS</h3>
+    <h3 style="color: tomato;">PROJECT</h3>
     <br>
     <h4 style="color: #05421f;">Login Authentication </h4>
         
@@ -328,14 +295,18 @@
        <P>   AngularJS Login Sample text with green login button</P>
    
         
+        <br>
+    
+       <ul>
+
+ 
+        <h2>Key concepts covered:</h2>
         
-        
-        Key concepts covered:
-        
-        AngularJS
-        State management
-        App controller
-        Dependencies</P> </div>
+      <li>  AngularJS</li>
+      <li>  State management</li>
+      <li>   App controller</li>
+      <li>  Dependencies</li>
+    </ul> </div>
 
 </body>
 
