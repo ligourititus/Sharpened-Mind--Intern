@@ -16,19 +16,20 @@
 
 .toggle-btn {
     position: absolute;
-    top: 20px;
-    right: 100px;
+    top: 15px;
+    right: 130px;
     padding: 10px 20px;
-    background-color: #38ffcd;
+    background-color: #f4f7f6;
     color: rgb(17, 16, 16);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bolder;
    
 }
 
 .toggle-btn:hover {
-    background-color:#f04343;
+    background-color:#ffffff;
 }
        
   input[type="BUTTON"] {
@@ -97,7 +98,7 @@ body{
     
 }
 h2{
-    transform: translate(-350px,-120px);
+    transform: translate(-200px,-120px);
     
 }
 p{
@@ -107,7 +108,7 @@ p{
     float:none;
     text-indent:-1000px;
     font-weight: bold;
-    transform: translate(150px,-90px);
+    transform: translate(300px,-90px);
 
 
 
